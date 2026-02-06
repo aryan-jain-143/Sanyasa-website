@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import ShopPage from './pages/ShopPage'
 import CustomPrintPage from './pages/CustomPrintPage'
 import ContactPage from './pages/ContactPage'
+import ProductDetailPage from './pages/ProductDetailPage'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/custom-print" element={<CustomPrintPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/product/:id" element={<ProductDetailPage />} />
         </Routes>
       </main>
       <Footer />
