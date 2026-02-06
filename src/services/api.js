@@ -46,3 +46,8 @@ const products = [
 export function getProducts() {
   return products
 }
+
+// Maintains compatibility with the initial scaffold API shape to avoid merge collisions.
+export function getFeaturedCollections() {
+  return products.slice(0, 2).map(({ id, name }) => ({ id, title: name }))
+}
